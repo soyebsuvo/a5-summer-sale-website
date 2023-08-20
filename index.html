@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summer Sale Main</title>
+    <title>Summer Sale</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+        <link rel="shortcut icon" href="./images/Summer 1.png" type="image/x-icon">
     <style>
         .font {
             font-family: 'Work Sans', sans-serif;
@@ -31,7 +32,7 @@
                         get <span class="text-secondary">20% off</span></h1>
                     <div class="flex justify-center items-center gap-4">
                         <p class="text-[14px] md:text-[18px] font-medium">Use this promo code</p>
-                        <h2 class="px-6 py-2 rounded-lg text-white bg-secondary">SELL200</h2>
+                        <h2 class="px-6 py-2 rounded-lg text-white bg-secondary cursor-pointer">SELL200</h2>
                     </div>
                 </div>
             </div>
@@ -49,12 +50,12 @@
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                             <!-- first card  -->
                             <div>
-                                <div onclick="getDetails(this)" id="firstCard" class="card bg-base-100 shadow-lg h-80 w-60 md:w-full mx-auto">
+                                <div onclick="getDetails(this)" id="firstCard" class="card bg-base-100 shadow-lg h-96 md:h-80 w-80 md:w-full mx-auto btn hover:bg-base-100">
                                     <figure class="pt-5">
                                         <img src="./images/prod1.png" alt="product"
-                                            class="rounded-xl w-3/4 md:w-2/3 lg:w-3/4 bg-[#F8F8F8] px-12 lg:px-14 pb-4 pt-2 md:py-5" />
+                                            class="rounded-xl w-full md:w-2/3 lg:w-3/4 bg-[#F8F8F8] px-12 lg:px-14 pb-4 pt-2 md:py-5" />
                                     </figure>
-                                    <div class="card-body items-center text-center">
+                                    <div class="card-body items-center text-center space-y-1">
                                         <div class="rating">
                                             <input type="radio" name="rating-2"
                                                 class="mask mask-star-2 bg-orange-400" />
@@ -73,12 +74,12 @@
                                 </div>
                             </div>
                             <div>
-                                <div onclick="getDetails(this)" class="card bg-base-100 shadow-xl h-80 w-60 md:w-full mx-auto">
+                                <div onclick="getDetails(this)" class="card bg-base-100 shadow-xl h-96 md:h-80 w-80 md:w-full mx-auto btn hover:bg-base-100">
                                     <figure class="pt-5">
                                         <img src="./images/prod2.png" alt="product"
-                                            class="rounded-xl w-3/4 md:w-2/3 lg:w-3/4 bg-[#F8F8F8] px-10 lg:px-14 pt-3 pb-4 md:py-7" />
+                                            class="rounded-xl w-full md:w-2/3 lg:w-3/4 bg-[#F8F8F8] px-10 lg:px-14 pt-3 pb-4 md:py-7" />
                                     </figure>
-                                    <div class="card-body items-center text-center">
+                                    <div class="card-body items-center text-center space-y-1">
                                         <div class="rating">
                                             <input type="radio" name="rating-22"
                                                 class="mask mask-star-2 bg-orange-400" />
@@ -97,12 +98,12 @@
                                 </div>
                             </div>
                             <div>
-                                <div onclick="getDetails(this)" class="card bg-base-100 shadow-xl h-80 w-60 md:w-full mx-auto">
+                                <div onclick="getDetails(this)" class="card bg-base-100 shadow-xl h-96 md:h-80 w-80 md:w-full mx-auto btn hover:bg-base-100">
                                     <figure class="pt-5">
                                         <img src="./images/prod3.png" alt="product"
                                             class="rounded-xl w-3/4 md:w-2/3 lg:w-3/4 bg-[#F8F8F8] px-10 lg:px-14 pt-4 pb-6 md:py-7" />
                                     </figure>
-                                    <div class="card-body items-center text-center">
+                                    <div class="card-body items-center text-center space-y-1">
                                         <div class="rating">
                                             <input type="radio" name="rating-21"
                                                 class="mask mask-star-2 bg-orange-400" />
@@ -129,12 +130,12 @@
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                             <!-- first card  -->
                             <div>
-                                <div onclick="getDetails(this)" class="card bg-base-100 shadow-lg h-80 w-60 md:w-full mx-auto">
+                                <div onclick="getDetails(this)" class="card bg-base-100 shadow-lg h-96 md:h-80 w-80 md:w-full mx-auto btn hover:bg-base-100">
                                     <figure class="pt-5">
                                         <img src="./images/prod4.png" alt="product"
                                             class="rounded-xl w-3/4 md:w-2/3 lg:w-3/4 bg-[#F8F8F8] px-10 lg:px-14 py-8" />
                                     </figure>
-                                    <div class="card-body items-center text-center">
+                                    <div class="card-body items-center text-center space-y-1">
                                         <div class="rating">
                                             <input type="radio" name="rating-23"
                                                 class="mask mask-star-2 bg-orange-400" />
@@ -153,12 +154,12 @@
                                 </div>
                             </div>
                             <div>
-                                <div onclick="getDetails(this)" class="card bg-base-100 shadow-xl h-80 w-60 md:w-full mx-auto">
+                                <div onclick="getDetails(this)" class="card bg-base-100 shadow-xl h-96 md:h-80 w-80 md:w-full mx-auto btn hover:bg-base-100">
                                     <figure class="pt-5">
                                         <img src="./images/prod5.png" alt="product"
                                             class="rounded-xl w-3/4 md:w-2/3 lg:w-3/4 bg-[#F8F8F8] px-10 lg:px-14 py-2 md:py-5" />
                                     </figure>
-                                    <div class="card-body items-center text-center">
+                                    <div class="card-body items-center text-center space-y-1">
                                         <div class="rating">
                                             <input type="radio" name="rating-24"
                                                 class="mask mask-star-2 bg-orange-400" />
@@ -177,12 +178,12 @@
                                 </div>
                             </div>
                             <div>
-                                <div onclick="getDetails(this)" class="card bg-base-100 shadow-xl h-80 w-60 md:w-full mx-auto">
+                                <div onclick="getDetails(this)" class="card bg-base-100 shadow-xl h-96 md:h-80 w-80 md:w-full mx-auto btn hover:bg-base-100">
                                     <figure class="pt-5">
                                         <img src="./images/prod6.png" alt="product"
                                             class="rounded-xl w-3/4 md:w-2/3 lg:w-3/4 bg-[#F8F8F8] px-10 lg:px-14 py-4 md:py-6" />
                                     </figure>
-                                    <div class="card-body items-center text-center">
+                                    <div class="card-body items-center text-center space-y-1">
                                         <div class="rating">
                                             <input type="radio" name="rating-25" class="mask mask-star-2 bg-orange-400"
                                                 checked />
@@ -209,12 +210,12 @@
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
                             <!-- first card  -->
                             <div>
-                                <div onclick="getDetails(this)" class="card bg-base-100 shadow-lg h-80 w-60 md:w-full mx-auto">
+                                <div onclick="getDetails(this)" class="card bg-base-100 shadow-lg h-96 md:h-80 w-80 md:w-full mx-auto btn hover:bg-base-100">
                                     <figure class="pt-5">
                                         <img src="./images/prod7.png" alt="product"
                                             class="rounded-xl w-3/4 md:w-2/3 lg:w-3/4 bg-[#F8F8F8] px-10 lg:px-14 py-4 md:py-7" />
                                     </figure>
-                                    <div class="card-body items-center text-center">
+                                    <div class="card-body items-center text-center space-y-1">
                                         <div class="rating">
                                             <input type="radio" name="rating-26"
                                                 class="mask mask-star-2 bg-orange-400" />
@@ -233,12 +234,12 @@
                                 </div>
                             </div>
                             <div>
-                                <div onclick="getDetails(this)" class="card bg-base-100 shadow-xl h-80 w-60 md:w-full mx-auto">
+                                <div onclick="getDetails(this)" class="card bg-base-100 shadow-xl h-96 md:h-80 w-80 md:w-full mx-auto btn hover:bg-base-100">
                                     <figure class="pt-5">
                                         <img src="./images/prod8.png" alt="product"
                                             class="rounded-xl w-3/4 md:w-2/3 lg:w-3/4 bg-[#F8F8F8] px-10 lg:px-14 py3 md:py-5" />
                                     </figure>
-                                    <div class="card-body items-center text-center">
+                                    <div class="card-body items-center text-center space-y-1">
                                         <div class="rating">
                                             <input type="radio" name="rating-27"
                                                 class="mask mask-star-2 bg-orange-400" />
@@ -257,12 +258,12 @@
                                 </div>
                             </div>
                             <div>
-                                <div onclick="getDetails(this)" class="card bg-base-100 shadow-xl h-80 w-60 md:w-full mx-auto">
+                                <div onclick="getDetails(this)" class="card bg-base-100 shadow-xl h-96 md:h-80 w-80 md:w-full mx-auto btn hover:bg-base-100">
                                     <figure class="pt-5">
                                         <img src="./images/prod9.png" alt="product"
                                             class="rounded-xl w-3/4 md:w-2/3 lg:w-3/4 bg-[#F8F8F8] px-10 lg:px-14 py-8" />
                                     </figure>
-                                    <div class="card-body items-center text-center">
+                                    <div class="card-body items-center text-center space-y-1">
                                         <div class="rating">
                                             <input type="radio" name="rating-28"
                                                 class="mask mask-star-2 bg-orange-400" />

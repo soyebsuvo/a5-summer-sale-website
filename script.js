@@ -9,7 +9,10 @@ function setText(elementId, text) {
     const element = document.getElementById(elementId);
     element.innerText = text;
 }
-
+const couponField = document.getElementById("coupon-field");
+if(couponField.disabled){
+    couponField.setAttribute("title","Invest at least 200TK to unlock this field");
+}
 function getDetails(target) {
     const productName = target.childNodes[3].childNodes[3].innerText;
     const productPriceString = target.childNodes[3].childNodes[5].childNodes[0].innerText;
@@ -38,6 +41,7 @@ function getDetails(target) {
     }
     if (newTotalPrice >= 200) {
         couponField.removeAttribute("disabled");
+        couponField.removeAttribute("title");
         applyBtn.removeAttribute("disabled");
     }
 
@@ -61,6 +65,7 @@ document.getElementById("home-btn").addEventListener("click", function () {
     const couponField = document.getElementById("coupon-field");
     couponField.value = "";
     couponField.disabled = true;
+    couponField.title = "Invest at least 200TK to unlock this field";
 })
 document.getElementById("apply-btn").addEventListener("click", function () {
     const couponField = document.getElementById("coupon-field");    
