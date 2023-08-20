@@ -24,12 +24,6 @@ function getDetails(target){
     setText("main-total", newMianTotal);   
     const purchaseBtn = document.getElementById("Purchase-btn");
     const couponField = document.getElementById("coupon-field");
-    if(newTotalPrice >= 0){
-        purchaseBtn.removeAttribute("disabled");
-    }
-    if(newTotalPrice >= 200){
-        couponField.removeAttribute("disabled");
-    }
     const listContainer = document.getElementById("selected-items");
     const p = document.createElement("p");
     const count = listContainer.childElementCount;
@@ -38,6 +32,14 @@ function getDetails(target){
     `;
     p.classList.add("font-bold");
     listContainer.appendChild(p);
+    if(newTotalPrice >= 0){
+        purchaseBtn.removeAttribute("disabled");
+    }
+    if(newTotalPrice >= 200){
+        couponField.removeAttribute("disabled");
+        applyBtn.removeAttribute("disabled");
+    }
+    
 }
 
 document.getElementById("home-btn").addEventListener("click", function(){
@@ -49,6 +51,13 @@ document.getElementById("home-btn").addEventListener("click", function(){
     discountPriceField.innerText = "00"
     const purchaseBtn = document.getElementById("Purchase-btn");
     purchaseBtn.disabled = true;
+    const listContainer = document.getElementById("selected-items");    
+    while (listContainer.hasChildNodes()) {
+        listContainer.removeChild(listContainer.firstChild);
+      }
+    //   const applyBtn = document.getElementById("apply-btn");
+    //   applyBtn.value = "";
+    //   couponField.disabled = true;
 })
 
 const couponField = document.getElementById("coupon-field");
@@ -71,7 +80,7 @@ document.getElementById("apply-btn").addEventListener("click", function(){
     const newTotalPrice = previousTotalPrice - discountPrice;
     previousMainTotalElement.innerText = newTotalPrice;
     const applyBtn = document.getElementById("apply-btn");
-    applyBtn.value = "";
+    couponField.value = "";
     applyBtn.disabled = true;
     couponField.disabled = true;
 })
