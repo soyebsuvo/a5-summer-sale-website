@@ -30,12 +30,13 @@ function getDetails(target){
     if(newTotalPrice >= 200){
         couponField.removeAttribute("disabled");
     }
+    const listContainer = document.getElementById("selected-items");
     const p = document.createElement("p");
+    const count = listContainer.childElementCount;
     p.innerHTML = `
-        ${productName}
+       ${count +1 }. ${productName}
     `;
     p.classList.add("font-bold");
-    const listContainer = document.getElementById("selected-items");
     listContainer.appendChild(p);
 }
 
