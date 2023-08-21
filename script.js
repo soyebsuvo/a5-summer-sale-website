@@ -44,7 +44,6 @@ function getDetails(target) {
         couponField.removeAttribute("title");
         applyBtn.removeAttribute("disabled");
     }
-
 }
 
 document.getElementById("home-btn").addEventListener("click", function () {
